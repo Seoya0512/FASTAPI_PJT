@@ -1,0 +1,62 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body>
+
+<h2>Progress</h2>
+<p> 고객님의 이용 현황입니다. </p>
+
+<img src="{{ url_for('static', path='images/nolabel.png') }}" alt="Paris" style="width:50%;">
+
+</body>
+</html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+</style>
+</head>
+<body>
+
+<br>
+<br>
+<table>
+  <tr>
+    <th> ID </th>
+    <th> PET개수(총) </th>
+    <th> 포인트 </th>
+  </tr>
+  <tr>
+    <td>{{id}} </td>
+    <td>{{pet_num}}</td>
+    <td>{{point}}</td>
+  </tr>
+
+</table>
+
+</body>
+</html>
