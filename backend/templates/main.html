@@ -12,7 +12,7 @@ img {
 <body>
 
 <h2>Progress</h2>
-<p> 고객님의 이용 현황입니다. </p>
+<p> {{id}}님의 투명페트병 분리배출 서비스 이용 현황입니다. </p>
 
 <img src="{{ url_for('static', path='images/nolabel.png') }}" alt="Paris" style="width:50%;">
 
@@ -31,7 +31,7 @@ table {
 }
 
 th, td {
-  text-align: left;
+  text-align: center;
   padding: 16px;
 }
 
@@ -46,9 +46,9 @@ tr:nth-child(even) {
 <br>
 <table>
   <tr>
-    <th> ID </th>
-    <th> PET개수(총) </th>
-    <th> 포인트 </th>
+    <th>ID </th>
+    <th>PET개수(총)</th>
+    <th>포인트 </th>
   </tr>
   <tr>
     <td>{{id}} </td>
